@@ -1,0 +1,188 @@
+{
+
+"fundinground": [
+    {
+        "key": "RoundId",
+        "type": "keyid",
+        "UIComponentTitle": "FundingRound"
+    }
+    
+
+    ,{
+        "key": "StartupLogoIcon",
+        "label": "StartupLogoIcon",
+        "type": "doc",
+        "accept": ".JPG,.JPEG,.PNG",
+        "width": "30%",
+        "editable": true,
+        "validators": [
+                    ]
+                            }
+    ,{
+        "key": "RoundType",
+        "label": "RoundType",
+        "type": "dropdown",
+        "valueId": "Value",
+        "nameId": "Name",
+        "contentId": "Name",
+        "source": "StageName",
+        "enum": true,
+        "editable": true,
+        "validators": [
+             "isNumber"
+        ]
+                            }
+    ,{
+        "key": "DateOfFunding",
+        "label": "DateOfFunding",
+        "type": "date",
+        "editable": true,
+        "validators": [
+                    ]
+                            }
+    ,{
+        "key": "AmountRaised",
+        "label": "AmountRaised",
+        "type": "text",
+        "editable": true,
+        "validators": [
+             "isFloat"
+, "isPositive"
+        ]
+                            }
+    ,{
+        "key": "Status",
+        "label": "Status",
+        "type": "dropdown",
+        "valueId": "Value",
+        "nameId": "Name",
+        "contentId": "Name",
+        "source": "RoundStatus",
+        "enum": true,
+        "editable": true,
+        "validators": [
+             "isNumber"
+        ]
+                            }
+    ,{
+        "key": "TargetAmount",
+        "label": "TargetAmount",
+        "type": "text",
+        "editable": true,
+        "validators": [
+             "isFloat"
+, "isPositive"
+        ]
+                            }
+    ,{
+        "key": "PostValuation",
+        "label": "PostValuation",
+        "type": "text",
+        "editable": true,
+        "validators": [
+             "isFloat"
+, "isPositive"
+        ]
+                            }
+    ,{
+        "key": "FundingRoundLeadInvestor",
+        "label": "LeadInvestor",
+        "type": "dropdown",
+        "valueId": "InvestorId",
+        "nameId": "Name",
+        "contentId": "Name",
+        "source": "Investor",
+        "uicomponent": "investorleadinvestor",
+        "create": true,
+        "editable": true,
+        "validators": [
+                    ]
+                            }
+    ,{
+        "key": "FundingRoundLeadInvestor",
+        "label": "LeadInvestor",
+        "type": "dropdown",
+        "valueId": "InvestorId",
+        "nameId": "ContactNumber",
+        "contentId": "ContactNumber",
+        "source": "Investor",
+        "uicomponent": "investorleadinvestor",
+        "create": true,
+        "editable": true,
+        "validators": [
+                    ]
+                            }
+    ,{
+        "key": "FundingRoundFundedStartup",
+        "label": "FundedStartup",
+        "type": "dropdown",
+        "valueId": "SId",
+        "nameId": "Name",
+        "contentId": "Name",
+        "source": "Startup",
+        "uicomponent": "startupfundedstartup",
+        "create": true,
+        "editable": true,
+        "validators": [
+                    ]
+                            }
+]
+
+,"investorleadinvestor": [
+    {
+        "key": "InvestorId",
+        "type": "keyid",
+        "UIComponentTitle": "Investor"
+    }
+    ,{
+        "key": "Name",
+        "label": "Name",
+        "type": "text",
+        "editable": true,
+        "validators": [
+                    ]
+                            }
+    ,{
+        "key": "ContactNumber",
+        "label": "ContactNumber",
+        "type": "text",
+        "editable": true,
+        "validators": [
+                    ]
+                            }
+]
+
+,"startupfundedstartup": [
+    {
+        "key": "SId",
+        "type": "keyid",
+        "UIComponentTitle": "Startup"
+    }
+    ,{
+        "key": "Name",
+        "label": "Name",
+        "type": "text",
+        "editable": true,
+        "validators": [
+                    ]
+                            }
+    ,{
+        "key": "ContactNumber",
+        "label": "ContactNumber",
+        "type": "text",
+        "editable": true,
+        "validators": [
+                    ]
+                            }
+    ,{
+        "key": "Valuation",
+        "label": "Valuation",
+        "type": "text",
+        "editable": true,
+        "validators": [
+             "isFloat"
+, "isPositive"
+        ]
+                            }
+]
+}
